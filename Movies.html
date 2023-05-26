@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <style>
+    /* Navigation bar styles */
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #3a07f3;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: 'Courier New';
+    }
+
+    li a:hover {
+      background-color: #111;;
+    }
+
+    input[type="text"] {
+      float: right;
+      padding: 6px;
+      margin-top: 8px;
+      margin-right: 16px;
+      border: none;
+      font-size: 17px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    /* Banner styles */
+    .banner {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .banner img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      object-position: center;
+      transition: all 0.15s ease;
+    }
+
+    /* Movie trailer styles */
+    .trailer {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .trailer .container {
+      position: relative;
+    }
+
+    .trailer img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      position: relative;
+    }
+
+    .trailer img:hover {
+      transform: scale(1.1);
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(189, 52, 59, 0.8);
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: .5s ease;
+    }
+
+    .container:hover .overlay {
+      height: 100%;
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      font-family: 'Courier New';
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      white-space: nowrap;
+      display: none;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 54px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #000000;
+      font-family: 'Courier New';
+      margin-bottom: 0;
+    }
+
+    .container:hover .text {
+      display: block;
+    }
+    h3{
+      background-color: #111;
+      font-family: 'Courier New', Courier, monospace;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="WARNERBROS HOME PAGE.html">Home</a></li>
+    <li><a class="Movies" href="Movies.html">Movies</a></li>
+    <li><a href="tvshows.html">TV Shows</a></li>
+    <li><a href="games&apps.html">Games and Apps</a></li>
+    <li><a href="collections.html">Collections</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+    <input type="text" placeholder="Search..">
+  </ul>
+  <div class="banner">
+    <img src="warner2.jpg" alt="w100">
+  </div>
+  <h1>WHAT'S HOT</h1>
+  <div class="trailer">
+    <div class="container">
+      <a href="./shazamm.html">
+        <img src="shazam.jpg" alt="shazam">
+      </a>
+      <div class="overlay"></div>
+      <div class="text">Shazam</div>
+    </div>
+    <div class="container">
+      <img src="kingrichard.jpg" alt="kingrichard">
+      <div class="overlay"></div>
+      <div class="text">King Richard</div>
+    </div>
+    <div class="container">
+      <img src="dune.jpg" alt="dune">
+      <div class="overlay"></div>
+      <div class="text">Dune</div>
+    </div>
+    <div class="container">
+      <img src="matrix.jpg" alt="matrix">
+      <div class="overlay"></div>
+      <div class="text">The Matrix</div>
+    </div>
+    <div class="container">
+      <img src="batman.jpg" alt="batman">
+      <div class="overlay"></div>
+      <div class="text">Batman</div>
+    </div>
+  </div>
+  <h1>NEW RELEASES TO OWN</h1>
+  <div class="trailer">
+    <div class="container">
+      <img src="wrathofman.jpg" alt="wrathofman">
+      <div class="overlay"></div>
+      <div class="text">Wrath of Man</div>
+    </div>
+    <div class="container">
+      <img src="mortalk.jpg" alt="mortalk">
+      <div class="overlay"></div>
+      <div class="text">Mortal Kombat</div>
+    </div>
+    <div class="container">
+      <img src="godzilla.jpg" alt="godzilla">
+      <div class="overlay"></div>
+      <div class="text">Godzilla</div>
+    </div>
+    <div class="container">
+      <img src="judas.jpg" alt="judas">
+      <div class="overlay"></div>
+      <div class="text">Judas and the Black Messiah</div>
+    </div>
+    <div class="container">
+      <img src="thelittlethings.jpg" alt="thelittlethings">
+      <div class="overlay"></div>
+      <div class="text">The Little Things</div>
+    </div>
+  </div>
+  <h1>MOVIE NIGHT FAVOURITES</h1>
+  <div class="trailer">
+    <div class="container">
+      <img src="spacejam.jpg" alt="Space Jam">
+      <div class="overlay"></div>
+      <div class="text">The Flash</div>
+    </div>
+    <div class="container">
+      <img src="jamanji.jpg" alt="jumanji">
+      <div class="overlay"></div>
+      <div class="text">Jumanji</div>
+    </div>
+    <div class="container">
+      <img src="bluebeetle.jpg" alt="bluebeetle">
+      <div class="overlay"></div>
+      <div class="text">Blue Beetle</div>
+    </div>
+    <div class="container">
+      <img src="matrix.jpg" alt="matrix">
+      <div class="overlay"></div>
+      <div class="text">The Matrix</div>
+    </div>
+    <div class="container">
+      <img src="batman.jpg" alt="houseofdragons">
+      <div class="overlay"></div>
+      <div class="text">House of Dragons</div>
+    </div>
+  </div>
+  <h3>Terms and Conditions Apply</h3>
+</body>
+</html>

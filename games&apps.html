@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Games & Apps</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta charset="UTF-8">
+	
+	<style>
+	ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #3a07f3;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+	  font-family: 'Courier New';
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+
+    input[type="text"] {
+      float: right;
+      padding: 6px;
+      margin-top: 8px;
+      margin-right: 16px;
+      border: none;
+      font-size: 17px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 54px;
+      text-transform: uppercase;
+      text-align: center;
+      color:black;
+      font-family: 'Courier New';
+      margin-bottom: 0;
+    }
+
+    .banner {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .banner img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      object-position: center;
+      transition: all 0.15s ease;
+    }
+
+    .trailer {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .trailer .container {
+      position: relative;
+    }
+
+    .trailer img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .trailer img:hover {
+      transform: scale(1.1);
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(189, 52, 59, 0.8);
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: .5s ease;
+    }
+
+    .container:hover .overlay {
+      height: 100%;
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      white-space: nowrap;
+      display: none;
+	  font-family: 'Courier New';
+	  font-weight: bold;
+    }
+
+    .container:hover .text {
+      display: block;
+    }
+	h3{
+      background-color: #111;
+      font-family: 'Courier New', Courier, monospace;
+      color: white;
+    }
+	@media only screen and (max-width: 600px) {
+		h3 {
+			font-size: 36px;
+		}
+
+		h1{
+      font-size: 36px;
+    }
+	}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="WARNERBROS HOME PAGE.html">Home</a></li>
+	  <li><a class="Movies" href="Movies.html">Movies</a></li>
+	  <li><a href="tvshows.html">TV Shows</a></li>
+	  <li><a href="games&apps.html">Games and Apps</a></li>
+	  <li><a href="collections.html">Collections</a></li>
+	  <li><a href="feedback.html">Feedback</a></li>
+	  <input type="text" placeholder="Search..">
+	</ul>
+	<div class="banner">
+		<img src="warnerban.jpg" alt="WB Games">
+	</div>
+	<h1>VIDEO GAMES</h1>
+	<div class="trailer">
+		<div class="container">
+			<img src="hitman.jpg" alt="The Flash">
+			<div class="overlay"></div>
+			<div class="text">The Flash</div>
+		</div>
+		<div class="container">
+			<img src="lego.jpg" alt="Jumanji">
+			<div class="overlay"></div>
+			<div class="text">Jumanji</div>
+		</div>
+		<div class="container">
+			<img src="scribble.jpg" alt="Blue Beetle">
+			<div class="overlay"></div>
+			<div class="text">Scribblenauts Showdown</div>
+			</div>
+			<div class="container">
+				<img src="injustice.jpg" alt="Injustice">
+				<div class="overlay"></div>
+				<div class="text">Injustice</div>
+			</div>
+			<div class="container">
+				<img src="shadowofwar.jpg" alt="House of Dragons">
+				<div class="overlay"></div>
+				<div class="text">Shadow of War</div>
+			</div>
+			<div class="container">
+				<img src="legoss.jpg" alt="New Game 1">
+				<div class="overlay"></div>
+				<div class="text">Legos Worlds</div>
+			</div>
+			<div class="container">
+				<img src="batmanarkhman.jpg" alt="New Game 2">
+				<div class="overlay"></div>
+				<div class="text">Batman Return to Arkham</div>
+			</div>
+			<div class="container">
+				<img src="batman.jpg" alt="New Game 3">
+				<div class="overlay"></div>
+				<div class="text">Batman Arkham VR</div>
+			</div>
+		</div>
+		<h1>MOBILE GAMES & APPS</h1>
+		<div class="trailer">
+			<div class="container">
+				<img src="hitman.jpg" alt="The Flash">
+				<div class="overlay"></div>
+				<div class="text">The Flash</div>
+			</div>
+			<div class="container">
+				<img src="dcuniverse.jpg" alt="Jumanji">
+				<div class="overlay"></div>
+				<div class="text">Jumanji</div>
+			</div>
+			<div class="container">
+				<img src="wizardingworld.jpg" alt="wizardingworld">
+				<div class="overlay"></div>
+				<div class="text">Wizarding World</div>
+			</div>
+			<div class="container">
+				<img src="injustice.jpg" alt="Injustice">
+				<div class="overlay"></div>
+				<div class="text">Injustice 2</div>
+			</div>
+			<div class="container">
+				<img src="cartoonarcade.jpg" alt="cartoonarcade">
+				<div class="overlay"></div>
+				<div class="text">Cartoon Network Arcade</div>
+			</div>
+			<div class="container">
+				<img src="golfclash.jpg" alt="New Game 1">
+				<div class="overlay"></div>
+				<div class="text">Golf Clash</div>
+			</div>
+			<div class="container">
+				<img src="adultswim.jpg" alt="adultswim">
+				<div class="overlay"></div>
+				<div class="text">Adult Swim</div>
+			</div>
+			<div class="container">
+				<img src="teenytitan.jpg" alt="Teenytitans">
+				<div class="overlay"></div>
+				<div class="text">Teeny Titans</div>
+			</div>
+		</div>
+		<h3>Terms and Conditions Apply</h3>
+	</body>
+	</html>
